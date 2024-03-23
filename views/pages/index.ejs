@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>autenticazione con Github OAuth</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- load bulma css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- load fontawesome -->
+    <style>
+        body {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card text-center" style="width: auto; padding:30px ">
+
+            <h1><span class="fa fa-github"></span> Github OAuth</h1>
+            <div class="card-body">
+                <a href="https://github.com/login/oauth/authorize?client_id=<%= client_id %>"
+                    class="btn btn-primary"><span class="fa fa-github"></span> login</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

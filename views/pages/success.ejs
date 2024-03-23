@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>access granted</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- load bulma css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- load fontawesome -->
+      
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-success text-center"><span class="fa fa-github"></span> user information</h1>
+      <table class="table table-striped">
+      
+      <tbody>
+          <tr>
+            <th scope="row">Name</th>
+            <td><%= userData.name %></td>
+          </tr>
+          <tr>
+            <th scope="row">surname</th>
+            <td> <%=userData.login %></td>
+          </tr>
+          <tr>
+            <th scope ="row">company</th>
+            <td> <%=userData.company %></td>
+          </tr>
+          <tr>
+            <th scope ="row">bio</th>
+            <td> <%=userData.bio %></td>
+          </tr>
+         
+          
+        </tbody>
+      </table>
+
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="well">
+            <p>
+              <strong>Name</strong>: <%= userData.name %><br>
+              <strong>Username</strong>: <%= userData.login %><br>
+                <strong></strong>: <%= userData.company %><br>
+                <strong>Bio</strong>: <%= userData.bio %>
+            </p>
+          </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>

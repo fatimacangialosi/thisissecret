@@ -1,0 +1,3 @@
+# ignore ALL files in the folder "filesToIgnore"
+filesToIgnore/
+node_modules/

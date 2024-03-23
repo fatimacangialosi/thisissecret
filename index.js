@@ -36,7 +36,7 @@ app.get('/github/callback', (req, res) => {
   
   axios({
     method: 'post',
-    url: `https://github.com/login/oauth/access_token?client_id=${clientID}&client_secret=${clientSecret}&code=${requestToken}`,
+    url: `https://github.com/login/oauth/access_token?client_id=${clientID}&client_secret=${myClientSecret}&code=${requestToken}`,
     //the content type header, so that we get the response in JSON
     headers: {
          accept: 'application/json'
